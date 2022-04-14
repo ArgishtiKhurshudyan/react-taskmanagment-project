@@ -1,17 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// useEffect(() => {
+//   setIsLoading(true);
+//   let unsub = projectfirestore.collection("/tasks").onSnapshot((snapshot) => {
+//     let results = [];
+//     snapshot.docs.map((doc) => {
+//       results.push({ id: doc.id, ...doc.data() });
+//     });
+//     dispatch({ type: ACTIONS_TYPES.SET_TASKS, tasks: results });
+//     setIsLoading(false);
+//   });
+
+//   return () => unsub();
+// }, []);
+
+// const openModal = () => {
+//   dispatch({ type: ACTIONS_TYPES.OPEN_MODAL });
+// };
+
+// const deleteTask = (id) => {
+//   projectfirestore.collection("/tasks").doc(id).delete();
+// };
+
+// const editTask = (id) => {
+//   projectfirestore
+//     .collection("/tasks")
+//     .doc(id)
+//     .update({ title: "tes Ashot jan" });
+// };

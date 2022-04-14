@@ -1,0 +1,62 @@
+.userContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+
+  .icon {
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 30%;
+   
+
+    span {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 25px;
+      margin: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .sectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 260px;
+    height: 260px;
+    // background-color: red;
+    margin: 102px 206px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .titleContainer {
+    display: flex;
+    //   align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: -200px;
+
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      color: rgb(6, 3, 35);
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 20px;
+      span {
+        color: crimson;
+      }
+    }
+  }
+}
